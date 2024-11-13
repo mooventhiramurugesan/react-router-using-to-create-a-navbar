@@ -1,0 +1,72 @@
+/* Navbar.css */
+
+/* Overall navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  /* Logo styling */
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #f0f0f0;
+    text-transform: uppercase;
+  }
+  
+  /* Navigation links container */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Individual navigation links */
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* On hover: change background color of links */
+  .nav-link:hover {
+    background-color: #575757;
+    border-radius: 4px;
+  }
+  
+  /* Active link styling */
+  .nav-link.active {
+    font-weight: bold;
+    background-color: #444;
+    border-radius: 4px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-link {
+      width: 100%;
+      padding: 10px 20px;
+      text-align: left;
+    }
+  }
+  
